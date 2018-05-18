@@ -1,0 +1,64 @@
+This program will do the following:
+
+recurvively cycle through all files in the target directory and subdirectories
+
+open logfile
+
+touch > logfile
+
+find - name | convert(name)
+
+Now call python script to do the following:
+
+summarise and group converted files as follows:
+
+artist, album - converted or unconverted
+
+write summary of actions to file and output to terminal.
+
+Option - rsynch with remote music folder - similar log funtion.
+
+Develop as follows:
+
+(a) first emphasise file reading and writing functions.
+(b) 
+
+
+function convert(name):
+{
+    if file type is ALAC:
+        {
+        convert to FLAC
+        converted status = TRUE
+        logfile(name,converted status)
+        } 
+
+    if file type is AIFF:
+        {
+        convert to FLAC
+        converted status = TRUE
+        logfile(name,converted status
+        }
+
+
+    if file type is WAV:
+        {
+        convert to FLAC
+        log as follows:
+
+        write tags (can this be done with WAV)
+        converted status = TRUE
+        logfile(name,converted status)
+        }
+
+    if file type is MP3 OR AAC:
+        {
+        log as follows:
+        do not convert,artistname,albumtitle,songtitle,type >> logfile
+        }
+}
+
+function logfile(name, converted status:
+{
+    converted status,artistname,albumtitle,songtitle,type    >> logfile
+}
